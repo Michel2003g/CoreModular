@@ -1,3 +1,5 @@
+import ModuleCard from "../components/ModuleCard";
+
 const data = {
     meshparticles: {
         title: "Mesh Particles",
@@ -5,7 +7,8 @@ const data = {
             Spawn 3d particles inside you world.
         `,
         elements: [
-            "<Navbar />"
+            <ModuleCard title='works' link='meshparticles'/>,
+            <ModuleCard title='works' link='meshparticles'/>
         ]
     },
 }

@@ -1,13 +1,15 @@
 import { useParams } from 'react-router-dom';
+import ModuleCard from '../components/ModuleCard';
 import '../assets/css/index.css';
 
 import Data from '../data/ModuleData.js';
 
+const urlParams = new URLSearchParams(window.location.search);
+
 function App() {
 
-  const { id } = useParams();
-
-  const Module = Data[id];
+  const id = urlParams.get("id");
+  const Module = Data[id]
 
   if (Module === undefined) {
     return (
@@ -21,7 +23,7 @@ function App() {
     <div className="App">
       <h1>{ Module.title }</h1>
       {Module.elements.map( (a, b) => {
-        return <h1>{a}, {b}</h1>
+        return a
       })}
     </div>
   );
