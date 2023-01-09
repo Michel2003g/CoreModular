@@ -1,0 +1,46 @@
+.searchblock {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 16px;
+
+  align-items: center;
+  justify-content: center;
+
+  height: fit-content;
+
+  background-color: var(--c2);
+  color: white;
+}
+
+.searchblock > .logo{
+
+  margin-bottom: 16px;
+
+  width: 50%;
+  min-width: 200px;
+  max-width: 350px;
+
+}
+
+.subinfo {
+  text-align: center;
+  margin: 0 0 16px 0; 
+}
+
+.SearchBar {
+  padding: 4px 14px;
+  border-radius: 50px;
+  width: 30%;
+  min-width: 80px;
+  max-width: 100px;
+  transition: all .5s;
+}
+
+.SearchBar:focus {
+  min-width: 200px;
+  max-width: 400px;
+  border: none;
+  outline: 0;
+}
+
