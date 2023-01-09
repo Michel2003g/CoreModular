@@ -1,4 +1,6 @@
+import { useParams } from 'react-router-dom';
 import '../assets/css/Module.css';
+
 
 import Data from '../data/ModuleData.js';
 
@@ -6,7 +8,7 @@ const urlParams = new URLSearchParams(window.location.search);
 
 function App() {
 
-  const id = urlParams.get("id");
+  const { id } = useParams();
   const Module = Data[id]
 
   if (Module === undefined) {
