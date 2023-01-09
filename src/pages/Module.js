@@ -1,6 +1,4 @@
-import { useParams } from 'react-router-dom';
-import ModuleCard from '../components/ModuleCard';
-import '../assets/css/index.css';
+import '../assets/css/Module.css';
 
 import Data from '../data/ModuleData.js';
 

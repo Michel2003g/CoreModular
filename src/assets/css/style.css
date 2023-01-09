@@ -76,3 +76,38 @@ body {
 .navbar .logo {
   height: 20px;
 }
+
+.class {
+  padding: 4px 6px;
+  background-color: var(--gray);
+  color: var(--class);
+  border-radius: 8px;
+}
+
+.path {
+  padding: 4px 6px;
+  background-color: var(--gray);
+  color: var(--path);
+  font-weight: 300;
+  font-style: italic;
+  border-radius: 8px;
+}
+
+.string {
+  padding: 4px 6px;
+  background-color: var(--gray);
+  color: var(--string);
+  border-radius: 8px;
+}
+
+.link {
+  padding: 4px 6px;
+  background-color: var(--gray);
+  color: var(--blue);
+  border-radius: 8px;
+}
+
+.hide {
+  visibility: hidden;
+  position: absolute;
+}
