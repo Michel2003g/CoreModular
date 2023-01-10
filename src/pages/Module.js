@@ -1,4 +1,4 @@
-import '../assets/css/index.css';
+import '../assets/css/Module.css';
 
 import Data from '../data/ModuleData.js';
 
@@ -14,7 +14,7 @@ function App({data}) {
   }
 
   return (
-    <div className="App">
+    <div className="Module">
       <h1>{ data.title }</h1>
       {data.elements.map( (a, b) => {
         return a
