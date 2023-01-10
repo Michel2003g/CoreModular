@@ -74,7 +74,71 @@ const data = {
                             By clicking the remove button all selected objects will be cleared of attributes and tags.
                         </p>
                     </>
-                }/>
+                }/>,
+                <Section title="Copy" items={
+                    <>
+                        <p>
+                            By clicking the remove button all selected objects will be cleared of attributes and tags.
+                        </p>
+                    </>
+                }/>,
+                <Section title="Paste" items={
+                    <>
+                        <p>
+                            By clicking the remove button all selected objects will be cleared of attributes and tags.
+                        </p>
+                    </>
+                }/>,
+            ]}/>,
+            <Chapter title="Events" sections={[
+                <Section title="" items={
+                    <>
+                        <p>
+                            The event page can be accesed by clicking
+                            <SpecialText type="path" content="More > Events"/>.
+                            By pressing the add button a template script will be added to the first selection.
+                            Event scripts belong in a particle.
+                        </p>
+                        <ul>
+                            <li>
+                                <p className='test'>
+                                    <span className='bold'>OnDeath - </span>
+                                    This event fires when a particle dies. 
+                                    Happens when lifetime is acceded or on death by collision.
+                                </p>
+                            </li>
+                            <li>
+                                <p className='test'>
+                                    <span className='bold'>OnCreation - </span>
+                                    This event fires when a particle is created.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span className='bold'>OnCollision - </span>
+                                    This event fires when a particle collides. The collision event is not capped and fires each frame it is colliding. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span className='bold'>OnMovement - </span>
+                                    This event fires when a particle moves from its previous position.
+                                </p>
+                            </li>
+                        </ul>
+                    </>
+                }/>,
+            ]}/>,
+            <Chapter title="Presets" sections={[
+                <Section title="" items={
+                    <p>
+                        Presets can be found under 
+                        <SpecialText type="path" content="More > Presets"/>.
+                        If you hover over them 2 buttons appear.
+                        Add copies over all attributes from the target preset.
+                        Spawn spawns in the target preset in front of your cam.
+                    </p>
+                }/>,
             ]}/>,
         ]
     },
