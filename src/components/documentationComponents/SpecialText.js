@@ -4,7 +4,7 @@ const SpecialText = ({type, content}) => {
 
   if (type === "link") {
     return (
-      <a className="link" href={content}>{content}</a>
+      <a className="link" href={content} target="_blank">{content}</a>
     )
   }
 
