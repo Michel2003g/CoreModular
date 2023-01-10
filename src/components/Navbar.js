@@ -1,14 +1,16 @@
 import logo from '../assets/img/logo.png';
 
+import { BrowserRouter, Route, Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <nav className="navbar">
-        <a href="/CoreModular">
+        <Link to="/CoreModular">
           <img className='logo' src={logo} alt="logo" />
-        </a>
+        </Link>
         <ul className="navbar-ul">
           <li className='nav-item'>
-            <a className='nav-link' href="/CoreModular">Home</a>
+            <Link className='nav-link' to="/CoreModular">Home</Link>
           </li>
         </ul>
     </nav>

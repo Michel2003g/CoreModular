@@ -1,6 +1,8 @@
+import { BrowserRouter, Route, Link } from "react-router-dom";
+
 const LinkedButton = ({link, text, color}) => {
   return (
-    <a className="button" href={link} style={{backgroundColor: color}}>{text}</a>
+    <Link className="button" to={link} style={{backgroundColor: color}}>{text}</Link>
   )
 }
 
