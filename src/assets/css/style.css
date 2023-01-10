@@ -103,6 +103,14 @@ body {
   border-radius: 8px;
 }
 
+.string::before {
+  content: '"';
+}
+
+.string::after {
+  content: '"';
+}
+
 .link {
   margin-left: .5em;
   padding: 2px 6px;

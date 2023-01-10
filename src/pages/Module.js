@@ -1,9 +1,5 @@
 import '../assets/css/Module.css';
 
-import Data from '../data/ModuleData.js';
-
-const urlParams = new URLSearchParams(window.location.search);
-
 function App({data}) {
   if (data === undefined) {
     return (
