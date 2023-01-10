@@ -16,8 +16,7 @@ function App() {
           <Route index element={<Home />} />
           {
             Object.keys(Data).map((k, i) => {
-              console.log(Data[k])
-              return <Route path={"/CoreModular/" + k} element={<Module data={Data[k]}/>} />
+              return <Route key={i} path={"/CoreModular/" + k} element={<Module data={Data[k]}/>} />
             })
           }
           <Route path="*" element={<NotFound404 />} />
