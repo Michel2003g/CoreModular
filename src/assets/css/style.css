@@ -79,7 +79,7 @@ body {
 
 .class {
   margin-left: .5em;
-  padding: 4px 6px;
+  padding: 2px 6px;
   background-color: var(--gray);
   color: var(--class);
   border-radius: 8px;
@@ -87,7 +87,7 @@ body {
 
 .path {
   margin-left: .5em;
-  padding: 4px 6px;
+  padding: 2px 6px;
   background-color: var(--gray);
   color: var(--path);
   font-weight: 300;
@@ -97,7 +97,7 @@ body {
 
 .string {
   margin-left: .5em;
-  padding: 4px 6px;
+  padding: 2px 6px;
   background-color: var(--gray);
   color: var(--string);
   border-radius: 8px;
@@ -105,7 +105,7 @@ body {
 
 .link {
   margin-left: .5em;
-  padding: 4px 6px;
+  padding: 2px 6px;
   background-color: var(--gray);
   color: var(--blue);
   border-radius: 8px;
