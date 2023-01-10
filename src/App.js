@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/CoreModular/' element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/CoreModular/Module/:id" element={<Module />} />
+          <Route path="/CoreModular/Module/" element={<Module />} />
           <Route path="*" element={<NotFound404 />} />
         </Route>
       </Routes>
