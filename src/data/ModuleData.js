@@ -142,6 +142,21 @@ const data = {
             ]}/>,
         ]
     },
+    optiloop: {
+        title: "OptiLoop",
+        description: `
+            Optimized for and while loops.
+        `,
+        elements: [
+            <Chapter title="Introduction" sections={[
+                <Section items={
+                    <p>
+                        OptiLoop is for instancing for and while loops that run on runservice instead of roblox's default loops.
+                    </p>
+                }/>
+            ]}/>,
+        ]
+    },
 }
 
 export default data;
