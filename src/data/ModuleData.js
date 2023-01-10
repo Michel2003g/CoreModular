@@ -55,6 +55,27 @@ const data = {
                     </>
                 }/>
             ]}/>,
+            <Chapter title="Functions" sections={[
+                <Section title="Add" items={
+                    <>
+                        <p>
+                            By selecting a
+                            <SpecialText type="class" content="Part"/> or
+                            <SpecialText type="class" content="Attachment"/>
+                            and clicking the add button.
+                            You will change your current selection into a particle system.
+                            This applies to all selected objects that meet the class condition.
+                        </p>
+                    </>
+                }/>,
+                <Section title="Remove" items={
+                    <>
+                        <p>
+                            By clicking the remove button all selected objects will be cleared of attributes and tags.
+                        </p>
+                    </>
+                }/>
+            ]}/>,
         ]
     },
 }
