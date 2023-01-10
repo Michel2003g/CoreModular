@@ -78,6 +78,7 @@ body {
 }
 
 .class {
+  margin-left: .5em;
   padding: 4px 6px;
   background-color: var(--gray);
   color: var(--class);
@@ -85,6 +86,7 @@ body {
 }
 
 .path {
+  margin-left: .5em;
   padding: 4px 6px;
   background-color: var(--gray);
   color: var(--path);
@@ -94,6 +96,7 @@ body {
 }
 
 .string {
+  margin-left: .5em;
   padding: 4px 6px;
   background-color: var(--gray);
   color: var(--string);
@@ -101,6 +104,7 @@ body {
 }
 
 .link {
+  margin-left: .5em;
   padding: 4px 6px;
   background-color: var(--gray);
   color: var(--blue);
@@ -110,4 +114,24 @@ body {
 .hide {
   visibility: hidden;
   position: absolute;
+}
+
+.chapter {
+  margin: 0 0 26px 0;
+}
+
+.chapter > .title {
+  margin: 0 0 16px 0;
+}
+
+.section {
+  margin: 0 0 20px 0;
+}
+
+.section > .title {
+  margin: 0 0 8px 0;
+}
+
+.section > * {
+  margin: 0;
 }
