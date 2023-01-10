@@ -4,12 +4,8 @@ import Data from '../data/ModuleData.js';
 
 const urlParams = new URLSearchParams(window.location.search);
 
-function App() {
-
-  const id = urlParams.get("id");
-  const Module = Data[id]
-
-  if (Module === undefined) {
+function App({data}) {
+  if (data === undefined) {
     return (
       <h1>
         Non existing module was called for.
@@ -19,8 +15,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{ Module.title }</h1>
-      {Module.elements.map( (a, b) => {
+      <h1>{ data.title }</h1>
+      {data.elements.map( (a, b) => {
         return a
       })}
     </div>
