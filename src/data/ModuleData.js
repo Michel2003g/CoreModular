@@ -1,6 +1,7 @@
 import Chapter from '../components/documentationComponents/Chapter';
 import Section from '../components/documentationComponents/Section';
 import SpecialText from '../components/documentationComponents/SpecialText';
+import Video from '../components/documentationComponents/Video';
 
 const data = {
     meshparticles: {
@@ -19,6 +20,7 @@ const data = {
                             &nbsp;<SpecialText type="class" content="Meshpart's"/> or
                             &nbsp;<SpecialText type="class" content="Model's"/>
                         </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qLJnRs3mpUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </>
                 }/>,
                 <Section title="Important Info" items={
