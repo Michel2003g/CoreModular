@@ -5,12 +5,12 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar">
-        <Link to="/CoreModular">
+        <Link to="/">
           <img className='logo' src={logo} alt="logo" />
         </Link>
         <ul className="navbar-ul">
           <li className='nav-item'>
-            <Link className='nav-link' to="/CoreModular">Home</Link>
+            <Link className='nav-link' to="/">Home</Link>
           </li>
         </ul>
     </nav>

@@ -5,7 +5,7 @@ const ModuleCard = ({title, description, link}) => {
     <div className="module-card">
       <p className="title">{title}</p>
       <p className="description">{description}</p>
-      <LinkedButton color="rgb(0, 204, 255)" text="Documentation" link={"/CoreModular/" + link}/>
+      <LinkedButton color="rgb(0, 204, 255)" text="Documentation" link={"/" + link}/>
     </div>
   )
 }
