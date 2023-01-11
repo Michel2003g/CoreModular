@@ -1,8 +1,10 @@
 const Video = ({src, controls}) => {
   return (
-    <video className="video-element" src={src} controls={controls}>
-        
-    </video>
+    <div className="video-container">
+        <video className="video-element" src={src} controls={controls}>
+    
+        </video>
+    </div>
   )
 }
 

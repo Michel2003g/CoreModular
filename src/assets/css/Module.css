@@ -14,5 +14,34 @@
 .video-element {
   width: 80%;
   min-width: 150px;
+  max-width: 750px;
   height: auto;
+
+  border-radius: 12px;
+}
+
+.video-container {
+  margin: 12px 0 !important;
+  
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 100%;
+  height: fit-content;
+}
+
+iframe {
+  
+  width: 80%;
+  min-width: 150px;
+  max-width: 750px;
+  height: auto; /* 100/56.25 = 560/315 = 1.778 */
+  aspect-ratio: 100 / 63;
+  background:rgb(0, 0, 0);
+
+  border-radius: 12px;
+
 }
