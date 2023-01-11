@@ -1,6 +1,6 @@
 const Section = ({title, items}) => {
   return (
-    <div className="section">
+    <div className="section" id={title}>
         <h4 className="title">{title}</h4>
         {items}
     </div>
