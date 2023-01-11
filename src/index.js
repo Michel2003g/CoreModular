@@ -7,7 +7,7 @@ import './assets/css/style.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-document.title = "CoreModule"
+document.title = "CoreModular"
 
 root.render(
   <React.StrictMode>
