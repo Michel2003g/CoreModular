@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link } from "react-router-dom";
 
 const LinkedButton = ({link, text, color}) => {
   return (

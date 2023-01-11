@@ -1,6 +1,6 @@
 import logo from '../assets/img/logo.png';
 
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
