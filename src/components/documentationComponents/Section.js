@@ -1,8 +1,8 @@
-const Section = ({title, items}) => {
+const Section = ({title, children}) => {
   return (
     <div className="section" id={title}>
         <h4 className="title">{title}</h4>
-        {items}
+        {children}
     </div>
   )
 }

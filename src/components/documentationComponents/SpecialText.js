@@ -1,15 +1,15 @@
 import React from 'react'
 
-const SpecialText = ({type, content}) => {
+const SpecialText = ({type, children}) => {
 
   if (type === "link") {
     return (
-      <a className="link" href={content} target="_blank">{content}</a>
+      <a className="link" href={children} target="_blank">{children}</a>
     )
   }
 
   return (
-    <span className={type}>{content}</span>
+    <span className={type}>{children}</span>
   )
 }
 
