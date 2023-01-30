@@ -189,7 +189,7 @@ const data = {
             <Chapter title="Introduction">
                 <Section>
                     <p>
-                        AI behavior trees can be used to make npc behavior scripts. The module also contains 
+                        AI behavior trees can be used to make npc behavior scripts. The module also contains preset behavior like :walkTo() and :walkToAdvanced() this function uses pathfinding.
                     </p>
                 </Section>
             </Chapter>,
