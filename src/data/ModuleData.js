@@ -31,6 +31,11 @@ const data = {
                             And click on the install button to install the plugin.
                         </p> */}
                 </Section>
+                <Section title="Requirements">
+                    <p>
+                        The plugin requires script insertion to be allowed or the particles wont be able to work in run time.
+                    </p>
+                </Section>
             </Chapter>,
             <Chapter title="Plugin Pages">
                 <Section title="Edit Functions">
@@ -74,6 +79,14 @@ const data = {
                     The Collision event is a great way to make sure particles dont go though walls.
                 </Section>
             </Chapter>,
+            <Chapter title="Custom Particles">
+                <p>
+                    You probably do not want to stick to the boring default particle. Instead you can use a custom one. This will allow you to change the material, originalSize and or shape of the particles spawned by the system.
+                    To assign a custom particle to your system. Insert a <SpecialText type="class">ObjectValue</SpecialText> inside of your system
+                    and name it <SpecialText type="string">Target</SpecialText> this way the system knows you would like to use its value as a custom particle.
+                    Assign your custom particle to it's value and your done. You now have a system that emmits your custom particles.
+                </p>
+        </Chapter>,
         ]
     },
     meshparticles: {
