@@ -5,6 +5,77 @@ import Video from '../components/documentationComponents/Video';
 import YoutubeVideo from '../components/documentationComponents/YoutubeVideo';
 
 const data = {
+    goliathparticles: {
+        title: "Goliath Particles",
+        description: `
+        Spawn 3D particles inside your world. 2.0
+        `,
+        elements: [
+            <h3>Note: This documentation is not complete yet and will improve over time.</h3>,
+            <Chapter title="Introduction">
+                <p>
+                    Goliath Particles is a system that allows for 3d particles to spawn inside your game.
+                    Particles are updated every x amount of time acording to their systems settings.
+                    Particles can be coded seperately aswell.
+
+                    This new version comes with new features such as: Run outside runtime, Perlin Noise, LightUpdate, PreCalculate Appearance and more.
+                </p>
+                <YoutubeVideo src="https://www.youtube.com/embed/SmrbaTT1Lcw" />
+            </Chapter>,
+            <Chapter title="Plugin">
+                <Section title="Installation">
+                    <p>This version of the system is not plublished yet. Once the system is released it will be available on the roblox marketPlace for 600 Robux.</p>
+                        {/* <p>
+                            Go to 
+                            &nbsp;<SpecialText type="link"></SpecialText>&nbsp;
+                            And click on the install button to install the plugin.
+                        </p> */}
+                </Section>
+            </Chapter>,
+            <Chapter title="Plugin Pages">
+                <Section title="Edit Functions">
+                    <p>
+                        On this page you will find options that help you to quickly make and break particle systems
+                    </p>
+                </Section>
+                <Section title="Presets">
+                    <p>
+                        On this page you will find pre-made particle systems to help you get 
+                        femilliar with the system settings 
+                        and inspire you for the creation of your own systems.
+                    </p>
+                </Section>
+                <Section title="System Properties">
+                    <p>
+                        On this page you will find all options the system has.
+                        The settings can be adjusted in the Attributes section of roblox's editor aswell.
+                        But they're not sorted, on this page they are.
+                    </p>
+                </Section>
+                <Section title="Studio">
+                    <p>
+                        On this page you will find options that have something to do with the studio.
+                        Like the run button for example.
+                    </p>
+                </Section>
+                <Section title="Plugin">
+                    <p>
+                        On this page you will find options for the plugin.
+                    </p>
+                </Section>
+            </Chapter>,
+            <Chapter title="Module">
+                <Section title="Settings">
+                    detailed description of all settings will soon be added.
+                </Section>
+                <Section title="Events">
+                    Events are a great way to make your add extra effects and or logic to your particles. 
+                    For instance you could use the death event to make Fireworks.
+                    The Collision event is a great way to make sure particles dont go though walls.
+                </Section>
+            </Chapter>,
+        ]
+    },
     meshparticles: {
         title: "Mesh Particles",
         description: `
