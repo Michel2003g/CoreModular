@@ -5,6 +5,43 @@ import Video from '../components/documentationComponents/Video';
 import YoutubeVideo from '../components/documentationComponents/YoutubeVideo';
 
 const data = {
+    dataHandler: {
+        title: "Data Handler",
+        description: `
+        Easy way to store data
+        `,
+        elements: [
+            <Chapter title="Introduction">
+                <p>
+                    You can use this module to store data in the Roblox datastore.
+                    Its usefull to save player stats and custom data with just a few lines of code.
+                </p>
+            </Chapter>,
+            <Chapter title="Player Data">
+                <p>To store data for a player you have to make the <SpecialText type="class">playerData</SpecialText> object using <SpecialText type="code">playerData.new(Player)</SpecialText> This will return the object wich you need to store in a variable.
+                    Do this is all in a <SpecialText type="code">game.Players.PlayerAdded</SpecialText> Connection.
+                </p>
+            </Chapter>,
+            <Chapter title="Player Stats">
+                <p>If you wish to save player stats all you have to do is call the <SpecialText type="code">playerData:addStat(Name, initialize, get)</SpecialText> 
+                <ul>
+                    <li>
+                        <span className='bold'>Name</span> - Will be the key of your data.
+                    </li>
+                    <li>
+                        <span className='bold'>initialize</span> - Will be the function that runs when sync is called. in here you write code to apply your data to your game. You can get the data from the first parameter of your function.
+                    </li>
+                    <li>
+                        <span className='bold'>get</span> - Will be the function that runs when the player leaves. Make sure to always return data or nill will be saved. 
+                    </li>
+                </ul>
+                The <SpecialText type="code">playerData:addStat()</SpecialText> Will make a value in the leaderstats folder so you can visualize and change it outside the data handler script
+                
+                When you added all your values call <SpecialText type="code">playerData:sync()</SpecialText> to sync your data with the data from datastore.
+                </p>
+            </Chapter>,
+        ]
+    },
     goliathparticles: {
         title: "Goliath Particles",
         description: `
