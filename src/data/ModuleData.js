@@ -4,7 +4,118 @@ import SpecialText from '../components/documentationComponents/SpecialText';
 import Video from '../components/documentationComponents/Video';
 import YoutubeVideo from '../components/documentationComponents/YoutubeVideo';
 
+import flareCraft_icon from '../assets/img/flareCraft/logo.png';
+
 const data = {
+    flareCraft: {
+        title: "Flare Craft",
+        description: `
+        Build particle systems using modules.
+        `,
+        elements: [
+            <YoutubeVideo src="https://www.youtube.com/embed/I4DT7ZGYgLg"/>,
+            <Chapter title="Introduction">
+                <p>
+                    This plugin allows you to build particle systems using modules. 
+                    Because the systems are completly build from modules the posibilities are endless.
+                </p>
+                <p>
+                    This plugin comes with a module that will handle the particle systems in your world. 
+                </p>
+            </Chapter>,
+            <Chapter title="Setup">
+                <p>
+                    Once you installed the plugin the first thing you need to do is insert the needed modules and folders in your world. 
+                    You can do this by opening the plugin and pressing the repair button in the Studio tab.
+                </p>
+            </Chapter>,
+            <Chapter title="Navigation">
+                    <p>
+                        On the home page you can press one of the buttons to navigate to their respective pages.
+                    </p>
+                <Section title="Make System">
+                    <p>
+                    "Make System" will open a new widget displaying all available system templates.
+                    You can choose one to make a system out of it. Or press cancel if you changed your mind.
+                    </p>
+                    <p>
+                        After you choose a system template it will be added to the system folder and selected.
+                        A system edit page will show up. More over this in the System Editor section.
+                    </p>
+                </Section>
+                <Section title="Select System">
+                    <p>
+                    "Select System" will navigate the main plugin tab to a list of all systems in your system folder.
+                    Pressing one of these buttons will select the system in explorer and open the "System Editor".
+                    </p>
+                </Section>
+                <Section title="Make System Body">
+                    <p>
+                    "Make System Body" will open a new widget displaying all available system body templates.
+                    You can choose one to spawn and link to a system.
+                    </p>
+                </Section>
+                <Section title="Studio">
+                    <p>
+                    "Studio" will navigate the main plugin tab a new page with studio related pages / functions. 
+                    Such as the repair function.
+                    </p>
+                </Section>
+        </Chapter>,
+        <Chapter title="System Editor">
+            <p>
+                In the system editor you can edit your systems by adding or removing modules.
+                Each module will add a behavior to your system or particles itself.
+            </p>
+            <Section title="Sections">
+                <p>
+                    There are several sections on this page wich all have a specific purpose.
+                    Each section represents a moment on wich the modules will be called.
+                    Some are only called on initialization others are called each frame to render a particle.
+                </p>
+                <br></br>
+                <ul>
+                    <li>
+                        <span className='bold'>System Spawn</span> - Will be called each time a system is created.
+                    </li>
+                    <li>
+                        <span className='bold'>System Update</span> - Will be called every frame. In here you add things such as the particles spawn rate.
+                    </li>
+                    <li>
+                        <span className='bold'>Particle Spawn</span> - Will be called each time a particle is initialized. Here you add things such as velocity and/or acceleration. 
+                    </li>
+                    <li>
+                        <span className='bold'>Particle Update</span> - Will be called each time a particle is updated. Here you add things such as particle color, calculate velocity. 
+                    </li>
+                    <li>
+                        <span className='bold'>Events</span> - Will be called each time a particle is spawned. Here you add modules that will initialize your events such as particle collision or death.
+                    </li>
+                    <li>
+                        <span className='bold'>Render</span> - Will be called each time a particle needs to be rendered. Here you add modules that will set the particles renderModel the same as the values in your particle description table.
+                    </li>
+                </ul>
+            </Section>
+            <Section title="Add Module Button">
+                <p>
+                    By clicking the colored button next to the title of the section.
+                    A dropdown will appear. By clicking on one of the buttons you will add the respective module. 
+                    Clicking on the undefined button will close the dropdown.
+                </p>
+            </Section>
+            <Section title="Module Button">
+                <p>
+                    When you add a module to a system. It will add a button under their own section.
+                    When you hover over some buttons will appear, you can change the order of a module by clicking the up/down arrow.
+                    Or remove it by clicking the remove button.
+                </p>
+                <p>
+                    When you click on the module button itself, a submenu will appear. In this submenu you can find 2 buttons "Open" and "Select".
+                    Open will open the module in the script editor and select will select the module in the explorer window.
+                </p>
+            </Section>
+        </Chapter>,
+        ]
+    },
     dataHandler: {
         title: "Data Handler",
         description: `
