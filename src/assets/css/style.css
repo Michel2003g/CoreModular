@@ -157,3 +157,35 @@ body {
 .bold {
   font-weight: bold;
 }
+
+@media only screen and (max-width: 100px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.image-container {
+  aspect-ratio: 2 / 1.5; /* ↔️ is double the ↕️ */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.image-container > img {
+  width: 100%;
+  transition: all 0.25s;
+}
+
+.image-container:hover > img {
+  transform: scale(1.05);
+}

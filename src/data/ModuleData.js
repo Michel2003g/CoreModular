@@ -3,8 +3,9 @@ import Section from '../components/documentationComponents/Section';
 import SpecialText from '../components/documentationComponents/SpecialText';
 import Video from '../components/documentationComponents/Video';
 import YoutubeVideo from '../components/documentationComponents/YoutubeVideo';
+import Image from '../components/documentationComponents/Image';
 
-import flareCraft_icon from '../assets/img/flareCraft/logo.png';
+import flareCraft_editor from '../assets/img/flareCraft/tutorial/editor.png';
 
 const data = {
     flareCraft: {
@@ -13,21 +14,25 @@ const data = {
         Build particle systems using modules.
         `,
         elements: [
-            <YoutubeVideo src="https://www.youtube.com/embed/I4DT7ZGYgLg"/>,
-            <Chapter title="Introduction">
-                <p>
-                    This plugin allows you to build particle systems using modules. 
-                    Because the systems are completly build from modules the posibilities are endless.
-                </p>
-                <p>
-                    This plugin comes with a module that will handle the particle systems in your world. 
-                </p>
-            </Chapter>,
+            <div className="container">
+                <Chapter title="Introduction">
+                    <p>
+                        This plugin allows you to build particle systems using modules. 
+                        Because the systems are completly build from modules the posibilities are endless.
+                    </p>
+                    <p>
+                        This plugin comes with a module that will handle the particle systems in your world. 
+                    </p>
+                </Chapter>
+                <YoutubeVideo src="https://www.youtube.com/embed/I4DT7ZGYgLg"/>
+            </div>,
             <Chapter title="Setup">
+                <div>
                 <p>
                     Once you installed the plugin the first thing you need to do is insert the needed modules and folders in your world. 
                     You can do this by opening the plugin and pressing the repair button in the Studio tab.
                 </p>
+                </div>
             </Chapter>,
             <Chapter title="Navigation">
                     <p>
@@ -63,10 +68,11 @@ const data = {
                 </Section>
         </Chapter>,
         <Chapter title="System Editor">
-            <p>
-                In the system editor you can edit your systems by adding or removing modules.
-                Each module will add a behavior to your system or particles itself.
-            </p>
+                <p>
+                    In the system editor you can edit your systems by adding or removing modules.
+                    Each module will add a behavior to your system or particles itself.
+                </p>
+            <div class="container">
             <Section title="Sections">
                 <p>
                     There are several sections on this page wich all have a specific purpose.
@@ -95,6 +101,9 @@ const data = {
                     </li>
                 </ul>
             </Section>
+                <Image src={flareCraft_editor}></Image>
+            </div>
+            
             <Section title="Add Module Button">
                 <p>
                     By clicking the colored button next to the title of the section.
