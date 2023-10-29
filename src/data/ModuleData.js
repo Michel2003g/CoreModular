@@ -53,6 +53,13 @@ const data = {
                     "Select System" will navigate the main plugin tab to a list of all systems in your system folder.
                     Pressing one of these buttons will select the system in explorer and open the "System Editor".
                     </p>
+                    
+                </Section>
+                <Section title="Import Premade">
+                    <p>
+                    "Import Premade" will navigate the main plugin tab to a list of all premade systems you can import. 
+                    User made systems can be found here aswell.
+                    </p>
                 </Section>
                 <Section title="Make System Body">
                     <p>
@@ -64,6 +71,16 @@ const data = {
                     <p>
                     "Studio" will navigate the main plugin tab a new page with studio related pages / functions. 
                     Such as the repair function.
+                    </p>
+                </Section>
+                <Section title="Import/Export">
+                    <p>
+                    Here you can export your selected system.There can also be found a way to import them.
+                    </p>
+                </Section>
+                <Section title="Changelog">
+                    <p>
+                    "Changelog" tells you what has changed within the plugin through the time.
                     </p>
                 </Section>
         </Chapter>,
@@ -107,8 +124,9 @@ const data = {
             <Section title="Add Module Button">
                 <p>
                     By clicking the colored button next to the title of the section.
-                    A dropdown will appear. By clicking on one of the buttons you will add the respective module. 
-                    Clicking on the undefined button will close the dropdown.
+                    A new widget will open. In this window several dropdowns will appear. Each dropdown represents a category if you open it
+                    you will see all modules in that category wich also fit with the target section.
+                    If you dont want to add a module you can just close the widget.
                 </p>
             </Section>
             <Section title="Module Button">
