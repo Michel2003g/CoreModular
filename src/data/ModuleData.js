@@ -27,58 +27,77 @@ const data = {
                 <YoutubeVideo src="https://www.youtube.com/embed/I4DT7ZGYgLg"/>
             </div>,
             <Chapter title="Setup">
-                <div>
+                <div class="container">
                 <p>
                     Once you installed the plugin the first thing you need to do is insert the needed modules and folders in your world. 
                     You can do this by opening the plugin and pressing the repair button. You can find it by clicking the 
                     studio button on the plugin home page.
                 </p>
+                <YoutubeVideo src="https://www.youtube.com/embed/00lAdjpy8Bs?si=CTL9Jxrier1ifdLL"/>
                 </div>
             </Chapter>,
             <Chapter title="Navigation">
                     <p>
                         On the home page you can press one of the buttons to navigate to their respective pages.
                     </p>
-                <Section title="Make System">
-                    <p>
-                    "Make System" will open a new widget displaying all available system templates.
-                    You can choose one to make a system out of it. Or press cancel if you changed your mind.
-                    </p>
-                    <p>
-                        After you choose a system template it will be added to the system folder and selected.
-                        A system edit page will show up. More over this in the System Editor section.
-                    </p>
-                </Section>
-                <Section title="Select System">
-                    <p>
-                    "Select System" will navigate the main plugin tab to a list of all systems in your system folder.
-                    Pressing one of these buttons will select the system in explorer and open the "System Editor".
-                    </p>
-                    
-                </Section>
-                <Section title="Import Premade">
-                    <p>
-                    "Import Premade" will navigate the main plugin tab to a list of all premade systems you can import. 
-                    User made systems can be found here aswell.
-                    </p>
-                </Section>
-                <Section title="Make System Body">
-                    <p>
-                    "Make System Body" will open a new widget displaying all available system body templates.
-                    You can choose one to spawn and link to a system.
-                    </p>
-                </Section>
+                    <div class="container">
+                        <Section title="Make System">
+                        <p>
+                        "Make System" will open a new widget displaying all available system templates.
+                        You can choose one to make a system out of it. Or press cancel if you changed your mind.
+                        </p>
+                        <p>
+                            After you choose a system template it will be added to the system folder and selected.
+                            A system edit page will show up. More over this in the System Editor section.
+                        </p>
+                        </Section>
+                        <YoutubeVideo src="https://www.youtube.com/embed/6I1LtUOA0TA?si=L3vCMwZfw2fB51AL"/>
+                    </div>
+                
+                <div class="container">
+                    <Section title="Select System">
+                        <p>
+                        "Select System" will navigate the main plugin tab to a list of all systems in your system folder.
+                        Pressing one of these buttons will select the system in explorer and open the "System Editor".
+                        </p>
+                    </Section>
+                    <YoutubeVideo src="https://www.youtube.com/embed/3wQfdMCe27I?si=jIZHSUFsJ5Bsa8Mq"/>
+                </div>
+                <div class="container">
+                    <Section title="Import Premade">
+                        <p>
+                        "Import Premade" will navigate the main plugin tab to a list of all premade systems you can import. 
+                        User made systems can be found here aswell.
+                        </p>
+                    </Section>
+                    <YoutubeVideo src="https://www.youtube.com/embed/WRTyb550g9M?si=w0xWPNZ94e7BYxHM"/>
+                </div>
+                
+                <div class="container">
+                    <Section title="Make System Body">
+                        <p>
+                        "Make System Body" will open a new widget displaying all available system body templates.
+                        You can choose one to spawn and link to a system.
+                        </p>
+                    </Section>
+                    <YoutubeVideo src="https://www.youtube.com/embed/6P2KhmhPs94?si=tk9wjOfAHZ9ptsKP"/>
+                </div>
+                
                 <Section title="Studio">
                     <p>
                     "Studio" will navigate the main plugin tab a new page with studio related pages / functions. 
                     Such as the repair function.
                     </p>
                 </Section>
-                <Section title="Import/Export">
+                <div class="container">
+                    <Section title="Import/Export">
                     <p>
-                    Here you can export your selected system.There can also be found a way to import them.
+                        Here you can export your selected system.There can also be found a way to import them.
                     </p>
-                </Section>
+                    </Section>
+                    <YoutubeVideo src="https://www.youtube.com/embed/uLIK79l5bQw?si=tuAvScW-1-XWN8GU"/>
+                    </div>
+                
                 <Section title="Changelog">
                     <p>
                     "Changelog" tells you what has changed within the plugin through the time.
@@ -122,6 +141,7 @@ const data = {
                 <Image src={flareCraft_editor}></Image>
             </div>
             
+            <div class="container">
             <Section title="Add Module Button">
                 <p>
                     By clicking the colored button next to the title of the section.
@@ -130,6 +150,8 @@ const data = {
                     If you dont want to add a module you can just close the widget.
                 </p>
             </Section>
+            <YoutubeVideo src="https://www.youtube.com/embed/XmxO8u9UH_8?si=WlHWCNHB0aPfziQ6"/>
+            </div>
             <Section title="Module Button">
                 <p>
                     When you add a module to a system. It will add a button under their own section.
