@@ -30,7 +30,8 @@ const data = {
                 <div>
                 <p>
                     Once you installed the plugin the first thing you need to do is insert the needed modules and folders in your world. 
-                    You can do this by opening the plugin and pressing the repair button in the Studio tab.
+                    You can do this by opening the plugin and pressing the repair button. You can find it by clicking the 
+                    studio button on the plugin home page.
                 </p>
                 </div>
             </Chapter>,
