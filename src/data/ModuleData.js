@@ -8,6 +8,98 @@ import Image from '../components/documentationComponents/Image';
 import flareCraft_editor from '../assets/img/flareCraft/tutorial/editor.png';
 
 const data = {
+    Beziers: {
+        title: "Bezier Curve",
+        description: `
+            Create bezier curves using control points.
+        `,
+        elements: [
+            <Chapter title="Introduction">
+                <Section>
+                    <p>
+                        Bezier Curve is for instancing Cubic Bezier Curves inside your world. These curves can be used for Roller coasters or anything with a curved path. 
+                    </p>
+                </Section>
+            </Chapter>,
+            <Chapter title="Setup">
+            <div class="container">
+            <p>
+                Once you installed the plugin the first thing you need to do is insert the bezier module to be able to instance the curves in game. 
+                You can do this by opening the plugin and pressing replace module under the repair section.
+            </p>
+            {/* <YoutubeVideo src="https://www.youtube.com/embed/00lAdjpy8Bs?si=CTL9Jxrier1ifdLL"/> */}
+            </div>
+        </Chapter>,
+        <Chapter title="Navigation">
+        <p>
+            On the home page you can press one of the buttons to navigate to their respective pages.
+        </p>
+        <div class="container">
+            <Section title="Make System">
+            <p>
+            "Make System" will open a new widget displaying all available system templates.
+            You can choose one to make a system out of it. Or press cancel if you changed your mind.
+            </p>
+            <p>
+                After you choose a system template it will be added to the system folder and selected.
+                A system edit page will show up. More over this in the System Editor section.
+            </p>
+            </Section>
+            <YoutubeVideo src="https://www.youtube.com/embed/6I1LtUOA0TA?si=L3vCMwZfw2fB51AL"/>
+        </div>
+    
+    <div class="container">
+        <Section title="Select System">
+            <p>
+            "Select System" will navigate the main plugin tab to a list of all systems in your system folder.
+            Pressing one of these buttons will select the system in explorer and open the "System Editor".
+            </p>
+        </Section>
+        <YoutubeVideo src="https://www.youtube.com/embed/3wQfdMCe27I?si=jIZHSUFsJ5Bsa8Mq"/>
+    </div>
+    <div class="container">
+        <Section title="Import Premade">
+            <p>
+            "Import Premade" will navigate the main plugin tab to a list of all premade systems you can import. 
+            User made systems can be found here aswell.
+            </p>
+        </Section>
+        <YoutubeVideo src="https://www.youtube.com/embed/WRTyb550g9M?si=w0xWPNZ94e7BYxHM"/>
+    </div>
+    
+    <div class="container">
+        <Section title="Make System Body">
+            <p>
+            "Make System Body" will open a new widget displaying all available system body templates.
+            You can choose one to spawn and link to a system.
+            </p>
+        </Section>
+        <YoutubeVideo src="https://www.youtube.com/embed/6P2KhmhPs94?si=tk9wjOfAHZ9ptsKP"/>
+    </div>
+    
+    <Section title="Studio">
+        <p>
+        "Studio" will navigate the main plugin tab a new page with studio related pages / functions. 
+        Such as the repair function.
+        </p>
+    </Section>
+    <div class="container">
+        <Section title="Import/Export">
+        <p>
+            Here you can export your selected system.There can also be found a way to import them.
+        </p>
+        </Section>
+        <YoutubeVideo src="https://www.youtube.com/embed/uLIK79l5bQw?si=tuAvScW-1-XWN8GU"/>
+        </div>
+    
+    <Section title="Changelog">
+        <p>
+        "Changelog" tells you what has changed within the plugin through the time.
+        </p>
+    </Section>
+</Chapter>,
+        ]
+    },
     flareCraft: {
         title: "Flare Craft",
         description: `
