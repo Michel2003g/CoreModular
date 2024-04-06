@@ -35,68 +35,49 @@ const data = {
             On the home page you can press one of the buttons to navigate to their respective pages.
         </p>
         <div class="container">
-            <Section title="Make System">
+            <Section title="Create">
             <p>
-            "Make System" will open a new widget displaying all available system templates.
-            You can choose one to make a system out of it. Or press cancel if you changed your mind.
+            "Create" will spawn a new curve in the game.
             </p>
             <p>
-                After you choose a system template it will be added to the system folder and selected.
+                After the curve creation you will be prompted to the curve edit page.
                 A system edit page will show up. More over this in the System Editor section.
             </p>
+
+            <ul>
+                <li>
+                    <span className='bold'>Add Preset Section</span> - Add preset sections to current curve.
+                </li>
+                <li>
+                    <span className='bold'>Add Section</span> - Add a brand new section to current curve.
+                </li>
+                <li>
+                    <span className='bold'>Draw Coaster Track</span> - Draw a coaster track on the current curve.
+                </li>
+            </ul>
+
             </Section>
             <YoutubeVideo src="https://www.youtube.com/embed/6I1LtUOA0TA?si=L3vCMwZfw2fB51AL"/>
         </div>
     
     <div class="container">
-        <Section title="Select System">
+        <Section title="Find Curves">
             <p>
-            "Select System" will navigate the main plugin tab to a list of all systems in your system folder.
+            "Find Curves" will navigate the main plugin tab to a list of all systems in your system folder.
             Pressing one of these buttons will select the system in explorer and open the "System Editor".
             </p>
         </Section>
         <YoutubeVideo src="https://www.youtube.com/embed/3wQfdMCe27I?si=jIZHSUFsJ5Bsa8Mq"/>
     </div>
     <div class="container">
-        <Section title="Import Premade">
+        <Section title="Script Templates">
             <p>
-            "Import Premade" will navigate the main plugin tab to a list of all premade systems you can import. 
+            "Script Templates" will navigate the main plugin tab to a list of all premade systems you can import. 
             User made systems can be found here aswell.
             </p>
         </Section>
         <YoutubeVideo src="https://www.youtube.com/embed/WRTyb550g9M?si=w0xWPNZ94e7BYxHM"/>
     </div>
-    
-    <div class="container">
-        <Section title="Make System Body">
-            <p>
-            "Make System Body" will open a new widget displaying all available system body templates.
-            You can choose one to spawn and link to a system.
-            </p>
-        </Section>
-        <YoutubeVideo src="https://www.youtube.com/embed/6P2KhmhPs94?si=tk9wjOfAHZ9ptsKP"/>
-    </div>
-    
-    <Section title="Studio">
-        <p>
-        "Studio" will navigate the main plugin tab a new page with studio related pages / functions. 
-        Such as the repair function.
-        </p>
-    </Section>
-    <div class="container">
-        <Section title="Import/Export">
-        <p>
-            Here you can export your selected system.There can also be found a way to import them.
-        </p>
-        </Section>
-        <YoutubeVideo src="https://www.youtube.com/embed/uLIK79l5bQw?si=tuAvScW-1-XWN8GU"/>
-        </div>
-    
-    <Section title="Changelog">
-        <p>
-        "Changelog" tells you what has changed within the plugin through the time.
-        </p>
-    </Section>
 </Chapter>,
         ]
     },
