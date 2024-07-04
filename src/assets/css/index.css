@@ -92,5 +92,82 @@
   margin-top: auto;
 }
 
+.balloon {
+  padding: 16px;
+  margin: 6px 0;
+  
+  display: flex;
+  align-items: center;
+
+  width: calc(100% - 22px);
+  height: fit-content;
+
+  color: #ffffff;
+
+  border-radius: 8px;
+}
+
+.balloon a:link {
+  text-decoration: none;
+}
+
+.balloon a {
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #ffffff4b;
+  padding: 2px 12px;
+  border-radius: 8px;
+  transition: all .25s;
+}
+
+.balloon a:hover {
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #03030377;
+  padding: 2px 12px;
+  border-radius: 8px;
+}
+
+.balloon .container > * {
+  display: flex;
+  align-items: center;
+}
+
+.balloon > .content > * {
+  margin: 0;
+}
+
+.balloon.info {
+  background-color: #2CC0FF;
+}
+
+.balloon.warning {
+  background-color: #ffa42c;
+}
+
+.balloon > .icon {
+  height: 32px;
+  padding-right: 16px;
+}
+
+.script {
+  background-color: #072131;
+  padding: 6px;
+  counter-reset: element;   
+}
+
+.script > * {
+  margin: 4px 0;
+  color: #d6d6d6;
+}
+
+.script > *::before {
+  counter-increment: element;               
+  content: counter(element);
+  margin: 6px 14px 6px 6px;
+  color: #aaaaaa;
+  font-weight: 600;
+  font-size: 12px;
+}
 
 

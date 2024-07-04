@@ -1,6 +1,7 @@
 import Chapter from '../components/documentationComponents/Chapter';
 import Section from '../components/documentationComponents/Section';
 import SpecialText from '../components/documentationComponents/SpecialText';
+import InformationBalloon from '../components/documentationComponents/InformationBalloon';
 import Video from '../components/documentationComponents/Video';
 import YoutubeVideo from '../components/documentationComponents/YoutubeVideo';
 import Image from '../components/documentationComponents/Image';
@@ -8,12 +9,134 @@ import Image from '../components/documentationComponents/Image';
 import flareCraft_editor from '../assets/img/flareCraft/tutorial/editor.png';
 
 const data = {
+    behaviourtree: {
+        title: "Behaviour Trees",
+        description: `
+            Create behaviour trees to manage NPC's or other behavior.
+        `,
+        elements: [
+            <InformationBalloon type="warning">
+                <p>This documentation is incomplete.</p>
+            </InformationBalloon>,
+            <InformationBalloon type="warning">
+                <p>This plugin requires knoledge of coding in order to be used.</p>
+            </InformationBalloon>,
+            <InformationBalloon type="info">
+                <p>This plugin is up for sale in the roblox marketPlace for 7.99$.</p>
+                <a target='_blank' href="https://create.roblox.com/store/asset/18330184496">Buy Plugin</a>
+            </InformationBalloon>,
+            <Chapter title="Introduction">
+                <Section>
+                    <p>
+                        Behavior trees plugin allows you to create behaviour trees and instance them inside your world. 
+                        These trees can help you with creating complex NPC behavior. Like zombies chasing a player or 
+                        a friendly NPC helping the player battle enemies. 
+                    </p>
+                </Section>
+            </Chapter>,
+            <Chapter title="Setup">
+            <InformationBalloon type="warning">
+                <p>Changing the parent of the Node module will result in failure of dependencies.</p>
+            </InformationBalloon>
+            <div class="container"> 
+            <p>
+                Upon opening the plugin you will find a "Repair" button on top of the page. 
+                On first use you need to click this button to insert the required "Node" module inside your replicated storage.
+            </p>
+            {/* <YoutubeVideo src="https://www.youtube.com/embed/00lAdjpy8Bs?si=CTL9Jxrier1ifdLL"/> */}
+            </div>
+        </Chapter>,
+        <Chapter title="Tree creation and customization">
+        <div class="container">
+            <Section title="Creation">
+            <ul>
+                <li>
+                    <span className='bold'>New Tree</span> - Click the "New Tree" button on the top of the page.
+                </li>
+                <li>
+                    <span className='bold'>Complete Form</span> - Insert your desired name in the input field and click confirm.
+                </li>
+            </ul>
+
+            </Section>
+            {/* <YoutubeVideo src="https://www.youtube.com/embed/6I1LtUOA0TA?si=L3vCMwZfw2fB51AL"/> */}
+        </div>
+    
+    <div class="container">
+        <Section title="Select Tree">
+            <p>
+            On the home page of the plugin you will find a list that shows all trees in your place.
+            By clicking one of them you will be redirected to the edit page.
+            </p>
+        </Section>
+        {/* <YoutubeVideo src="https://www.youtube.com/embed/3wQfdMCe27I?si=jIZHSUFsJ5Bsa8Mq"/> */}
+    </div>
+
+    <div class="container">
+        <Section title="Tree Navigation">
+            <p>
+            After selecting a tree to edit and redirection to the edit page. The current selected parent node will show up on top of the page. With its children underneath.
+            You can navigate through the tree by clicking a child node. This will in turn show its children underneath the page.
+            </p>
+
+            
+        </Section>
+        {/* <YoutubeVideo src="https://www.youtube.com/embed/3wQfdMCe27I?si=jIZHSUFsJ5Bsa8Mq"/> */}
+    </div>
+
+    <div class="container">
+        <Section title="Node adjustment">
+        <p>
+            On a node you will find buttons wich allow you to edit the node and the trees behavior. 
+        </p>
+        <ul>
+                <li>
+                    <span className='bold'>Condition</span> - Opens a condition module. This module should return a function that returns either true or false.
+                </li>
+                <li>
+                    <span className='bold'>Action</span> - Opens a action module. This module should return a function that returns either true or false.
+                </li>
+                <li>
+                    <span className='bold'>Discription</span> - Opens a promt that shows the description of this node.
+                </li>
+                <li>
+                    <span className='bold'>Remove</span> - Destroys the node and moves all its children to the current parent node.
+                </li>
+            </ul>
+        </Section>
+        {/* <YoutubeVideo src="https://www.youtube.com/embed/3wQfdMCe27I?si=jIZHSUFsJ5Bsa8Mq"/> */}
+    </div>
+
+</Chapter>,
+<Chapter title="Instancing in game">
+<Section>
+    <p>
+        In order to use a tree in your world you need to call it with a script. 
+        You need to use the tree contructor to constuct the tree. This will return a working tree wich you can call :Start on
+    </p>
+</Section>
+<Section title="example scipt">
+    <ul className="script">
+        <p>local root = workspace.TreeFolder.NewTree.Root</p>
+        <p>local treeConstructor = require(game.ReplicatedStorage.TreeConstructor)</p>
+        <p>local tree = treeConstructor.constructTree(root)</p>
+        <p></p>
+        <p>tree:Start()</p>
+    </ul>
+</Section>
+</Chapter>,
+        ]
+    },
     Beziers: {
         title: "Bezier Curve",
         description: `
             Create bezier curves using control points.
         `,
         elements: [
+            <InformationBalloon type="info">
+                <p>This plugin is up for sale in the roblox marketPlace for 7.99$.</p>
+                <a target='_blank' href="https://create.roblox.com/store/asset/16969433057">Buy Plugin</a>
+            </InformationBalloon>,
             <Chapter title="Introduction">
                 <Section>
                     <p>
@@ -57,7 +180,7 @@ const data = {
             </ul>
 
             </Section>
-            <YoutubeVideo src="https://www.youtube.com/embed/6I1LtUOA0TA?si=L3vCMwZfw2fB51AL"/>
+            {/* <YoutubeVideo src="https://www.youtube.com/embed/6I1LtUOA0TA?si=L3vCMwZfw2fB51AL"/> */}
         </div>
     
     <div class="container">
@@ -67,7 +190,7 @@ const data = {
             Pressing one of these buttons will select the system in explorer and open the "System Editor".
             </p>
         </Section>
-        <YoutubeVideo src="https://www.youtube.com/embed/3wQfdMCe27I?si=jIZHSUFsJ5Bsa8Mq"/>
+        {/* <YoutubeVideo src="https://www.youtube.com/embed/3wQfdMCe27I?si=jIZHSUFsJ5Bsa8Mq"/> */}
     </div>
     <div class="container">
         <Section title="Script Templates">
@@ -76,7 +199,7 @@ const data = {
             User made systems can be found here aswell.
             </p>
         </Section>
-        <YoutubeVideo src="https://www.youtube.com/embed/WRTyb550g9M?si=w0xWPNZ94e7BYxHM"/>
+        {/* <YoutubeVideo src="https://www.youtube.com/embed/WRTyb550g9M?si=w0xWPNZ94e7BYxHM"/> */}
     </div>
 </Chapter>,
         ]
@@ -87,6 +210,13 @@ const data = {
         Build particle systems using modules.
         `,
         elements: [
+            <InformationBalloon type="info">
+                <p>Plugin comes with premade effects and systems.</p>
+            </InformationBalloon>,
+            <InformationBalloon type="info">
+            <p>This plugin is up for sale in the roblox marketPlace for 7.99$.</p>
+            <a target='_blank' href="https://create.roblox.com/store/asset/15041827425">Buy Plugin</a>
+            </InformationBalloon>,
             <div className="container">
                 <Chapter title="Introduction">
                     <p>
@@ -520,36 +650,36 @@ const data = {
             </Chapter>,
         ]
     },
-    optiloop: {
-        title: "OptiLoop",
-        description: `
-            Optimized for and while loops.
-        `,
-        elements: [
-            <Chapter title="Introduction">
-                <Section>
-                    <p>
-                        OptiLoop is for instancing for and while loops that run on runservice instead of roblox's default loops.
-                    </p>
-                </Section>
-            </Chapter>,
-        ]
-    },
-    ai: {
-        title: "AI (Behavior trees)",
-        description: `
-            use this module to create behavior trees.
-        `,
-        elements: [
-            <Chapter title="Introduction">
-                <Section>
-                    <p>
-                        AI behavior trees can be used to make npc behavior scripts. The module also contains preset behavior like :walkTo() and :walkToAdvanced() this function uses pathfinding.
-                    </p>
-                </Section>
-            </Chapter>,
-        ]
-    },
+    // optiloop: {
+    //     title: "OptiLoop",
+    //     description: `
+    //         Optimized for and while loops.
+    //     `,
+    //     elements: [
+    //         <Chapter title="Introduction">
+    //             <Section>
+    //                 <p>
+    //                     OptiLoop is for instancing for and while loops that run on runservice instead of roblox's default loops.
+    //                 </p>
+    //             </Section>
+    //         </Chapter>,
+    //     ]
+    // },
+    // ai: {
+    //     title: "AI (Behavior trees)",
+    //     description: `
+    //         use this module to create behavior trees.
+    //     `,
+    //     elements: [
+    //         <Chapter title="Introduction">
+    //             <Section>
+    //                 <p>
+    //                     AI behavior trees can be used to make npc behavior scripts. The module also contains preset behavior like :walkTo() and :walkToAdvanced() this function uses pathfinding.
+    //                 </p>
+    //             </Section>
+    //         </Chapter>,
+    //     ]
+    // },
 }
 
 export default data;
