@@ -9,6 +9,131 @@ import Image from '../components/documentationComponents/Image';
 import flareCraft_editor from '../assets/img/flareCraft/tutorial/editor.png';
 
 const data = {
+    AnimationController: {
+        title: "Animation Controller",
+        description: `
+            Create animation controllers that will drive animation on any model.
+        `,
+        elements: [
+            <InformationBalloon type="warning">
+                <p>This documentation is incomplete.</p>
+            </InformationBalloon>,
+            <InformationBalloon type="warning">
+                <p>This plugin requires knoledge of coding in order to be used.</p>
+            </InformationBalloon>,
+            <InformationBalloon type="info">
+                <p>This plugin is up for sale in the roblox marketPlace for 7.99$.</p>
+                <a target='_blank' href="https://create.roblox.com/store/asset/18330184496">Buy Plugin</a>
+            </InformationBalloon>,
+            <Chapter title="Introduction">
+                <Section>
+                    <p>
+                        This AnimationController plugin helps you create animation controllers more easily. Instead of having to manually code every node
+                        you can make object descriptions with this plugin and convert them in run time to a controller.
+                    </p>
+                </Section>
+            </Chapter>,
+            <Chapter title="Setup">
+            <InformationBalloon type="warning">
+                <p>Changing the parent of the AnimationController module will result in failure of dependencies.</p>
+            </InformationBalloon>
+            <div class="container"> 
+            <p>
+                To use your animation controller you have to import the AnimationController module to your game. This is done by using the orange button on the home page after opening the plugin.
+            </p>
+            {/* <YoutubeVideo src="https://www.youtube.com/embed/00lAdjpy8Bs?si=CTL9Jxrier1ifdLL"/> */}
+            </div>
+        </Chapter>,
+        <Chapter title="Controllers">
+            <Section title="Creation">
+            <div class="container">
+            <ul>
+                <li>
+                    <span className='bold'>New Controller</span> - Click the blue "Create Controller" button on the home page.
+                </li>
+                <li>
+                    <span className='bold'>Complete Form</span> - Insert your desired name in the input field and click confirm.
+                </li>
+                <li>
+                    <span className='bold'>Edit Page</span> - You will be take to the edit page. Find out more about the controller edit page below.
+                </li>
+            </ul>
+        {/* <YoutubeVideo src="https://www.youtube.com/embed/3wQfdMCe27I?si=jIZHSUFsJ5Bsa8Mq"/> */}
+    </div>  
+            </Section>
+        <div class="container">
+            <Section title="Find Controller">
+            <ul>
+                <li>
+                    <span className='bold'>Find Controller</span> - Click the "View" button on the home page.
+                </li>
+                <li>
+                    <span className='bold'>Edit Controller</span> - Click the "Edit" button next to your desired controller name.
+                </li>
+                <li>
+                    <span className='bold'>Edit Page</span> - Find more about the controller edit page below.
+                </li>
+            </ul>
+
+            </Section>
+            {/* <YoutubeVideo src="https://www.youtube.com/embed/6I1LtUOA0TA?si=L3vCMwZfw2fB51AL"/> */}
+        </div>
+
+    <div class="container">
+        <Section title="Tree Navigation">
+            <p>
+            After selecting a tree to edit and redirection to the edit page. The current selected parent node will show up on top of the page. With its children underneath.
+            You can navigate through the tree by clicking a child node. This will in turn show its children underneath the page.
+            </p>
+
+            
+        </Section>
+        {/* <YoutubeVideo src="https://www.youtube.com/embed/3wQfdMCe27I?si=jIZHSUFsJ5Bsa8Mq"/> */}
+    </div>
+
+    <div class="container">
+        <Section title="Node adjustment">
+        <p>
+            On a node you will find buttons wich allow you to edit the node and the trees behavior. 
+        </p>
+        <ul>
+                <li>
+                    <span className='bold'>Condition</span> - Opens a condition module. This module should return a function that returns either true or false.
+                </li>
+                <li>
+                    <span className='bold'>Action</span> - Opens a action module. This module should return a function that returns either true or false.
+                </li>
+                <li>
+                    <span className='bold'>Discription</span> - Opens a promt that shows the description of this node.
+                </li>
+                <li>
+                    <span className='bold'>Remove</span> - Destroys the node and moves all its children to the current parent node.
+                </li>
+            </ul>
+        </Section>
+        {/* <YoutubeVideo src="https://www.youtube.com/embed/3wQfdMCe27I?si=jIZHSUFsJ5Bsa8Mq"/> */}
+    </div>
+
+</Chapter>,
+<Chapter title="Instancing in game">
+<Section>
+    <p>
+        In order to use a controller in your world you need to call it with a script. 
+        After you required the AnimationController module. Here is a code example:
+    </p>
+</Section>
+<Section title="example scipt">
+    <ul className="script">
+        <p>local AnimationController = require(workspace.AnimationControllerV2)</p>
+        <p>local controller = AnimationController.new()</p>
+        <p>controller:loadFromPhysical()</p>
+        <p></p>
+        <p>controller:run()</p>
+    </ul>
+</Section>
+</Chapter>,
+        ]
+    },
     behaviourtree: {
         title: "Behaviour Trees",
         description: `
